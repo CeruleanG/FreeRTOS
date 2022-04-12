@@ -6,7 +6,7 @@ Finally, the last task, task 5 converts the time in milliseconds into minutes an
 
 ## Files
 
-### Jingwen_CHEN.ino
+### main.ino
 The code Arduino of the work.
 
 ### diagram.json
