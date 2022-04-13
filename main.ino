@@ -7,14 +7,17 @@ struct valeurCapteurs {
     double tempsEnMillisecondes;
 };
 
+//RTOS 
 SemaphoreHandle_t xSerialSemaphore = NULL; 
 QueueHandle_t qAnalogRead; //analog reading of the potentiometer
 QueueHandle_t qButton; //digital sum of 2 push buttons
 QueueHandle_t qSensor; //structure "valeurCapteurs" 
 QueueHandle_t qSensor4to5; //structure "valeurCapteurs" used by task 4 in order to send data
 
+//global virable
 const TickType_t xDelay = 100 / portTICK_PERIOD_MS;
 
+//pins
 const int analogPin = A0;
 const int button1Pin = 3;
 const int button2Pin = 4;
